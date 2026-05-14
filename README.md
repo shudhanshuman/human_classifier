@@ -49,8 +49,10 @@ HUMAN CLASSIFIER/
     ```bash
     pip install -r requirements.txt
     ```
+3. **Download Model Weights**
 
-3. **Dataset Preparation (Only if you want to train your own model):**
+     Download `best_model.pth` from the [Custom Model](https://github.com/shudhanshuman/human_classifier/releases/tag/v1.0) and place it inside `models/Darknet_Custom/checkpoints_darknet/`
+4. **Dataset Preparation (Only if you want to train your own model):**
 
    Because the raw dataset is ~18GB, it is not hosted in this repository. Please follow the instructions in `data/DATA_SET.md` to download the COCO 2017 subset and run the `cleanup.py` script.
 
@@ -83,7 +85,7 @@ python webcam.py
 
 * **Data Engineering:** Curating and pruning a large data set like COCO.
 * **Training Stability:** Executed a 41-hour stable training run while maintaining high Model FLOPs Utilization (MFU), optimizing the pipeline to ensure hardware efficiency and consistent gradient flow without compute bottlenecks.  
-* **Inference Pipeline:** Achieving a stable video output required engineering dynamic padding (to fix proximity scale bias) and a custom temporal smoothing algorithm (`process_video_smooth.py`) to eliminate bounding box jitter.
+* **Inference Pipeline:** Achieving a stable video output required engineering dynamic padding (to fix proximity scale bias) and a custom temporal smoothing algorithm (`process_video.py`) to eliminate bounding box jitter.
 
 ---
 *Developed by Shudhanshu Ranjan Gupta, ECE , IIT Guwahati*
