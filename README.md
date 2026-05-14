@@ -9,7 +9,10 @@ An end-to-end ML project for real-time human detection from live video feeds. Th
 Trained entirely on Apple Silicon (M2) using PyTorch's Metal Performance Shaders (`mps`).
 
 ## Demonstration
-<video src="assets/demo.mp4" autoplay loop muted playsinline width="100%"></video>
+
+https://github.com/user-attachments/assets/afd4c7ca-cd3e-42ac-8592-3b98edf2b8bf
+
+
 
 ## Project Overview
 This repository systematically assesses three different approaches for object localization, generalization, and temporal stability:
