@@ -10,7 +10,7 @@ Trained entirely on Apple Silicon (M2) using PyTorch's Metal Performance Shaders
 
 ## Demonstration
 
-<video src="https://github.com/user-attachments/assets/afd4c7ca-cd3e-42ac-8592-3b98edf2b8bf" autoplay loop muted playsinline width="100%"></video>
+![demo.gif](assets/demo.gif)
 
 
 
