@@ -114,9 +114,7 @@ The entire pipeline-from data processing to model training and inference-was exe
 ## 5. Results and Comparative Analysis
 **DEMO-**
 
-<video src="../assets/demo.mp4" autoplay loop muted playsinline width="100%"></video>
-
-<!-- [INSERT MP4 HERE: Output video in CNN file] -->
+![demo.gif](assets/demo.gif)
 
 ## 6. Comparative Analysis
 
