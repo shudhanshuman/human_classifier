@@ -1,0 +1,13 @@
+
+data/train2017/
+data/val2017/
+data/annotations/
+*.zip
+
+*.pth
+*.pt
+
+__pycache__/
+*.pyc
+
+.DS_Store
