@@ -82,8 +82,8 @@ python webcam.py
 ##  Key Learnings
 
 * **Data Engineering:** Curating and pruning a large data set like COCO.
-* **:** 
+* **Training Stability:** Executed a 41-hour stable training run while maintaining high Model FLOPs Utilization (MFU), optimizing the pipeline to ensure hardware efficiency and consistent gradient flow without compute bottlenecks.  
 * **Inference Pipeline:** Achieving a stable video output required engineering dynamic padding (to fix proximity scale bias) and a custom temporal smoothing algorithm (`process_video_smooth.py`) to eliminate bounding box jitter.
 
 ---
-*Developed by Shudhanshu Ranjan Gupta*
+*Developed by Shudhanshu Ranjan Gupta, ECE , IIT Guwahati*
