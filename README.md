@@ -35,3 +35,55 @@ HUMAN CLASSIFIER/
 ├── .gitignore
 ├── requirements.txt      
 └── README.md
+```
+## Quick Start & Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/human-classifier.git
+    cd human-classifier
+    ```
+
+2. **Install dependencies:**
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Dataset Preparation (Only if you want to train your own model):**
+
+   Because the raw dataset is ~18GB, it is not hosted in this repository. Please follow the instructions in `data/DATA_SET.md` to download the COCO 2017 subset and run the `cleanup.py` script.
+
+##  Running the Models (Live Webcam)
+
+You can test each model's real-time inference on your local webcam. Navigate to the respective model directory and run the webcam script.
+
+**Run the Custom Darknet Model:**
+```bash
+cd models/Darknet_Custom
+python webcam.py
+```
+
+**Run the YOLOv8 Benchmark:**
+```bash
+cd models/YOLOv8_SOTA
+python webcam.py
+```
+
+##  Performance Matrix
+
+| Feature | Baseline CNN | Custom Darknet | YOLOv8 (SOTA) |
+| :--- | :--- | :--- | :--- |
+| **Accuracy (mAP)** | Very low | 68% | 94% |
+| **Model Size** | 4.6 MB | ~80 MB | 87 MB |
+| **Real-Time Inference** | Yes | Yes | Yes |
+| **Architecture Type** | Frame-difference | Anchor-based | Anchor-free |
+
+##  Key Learnings
+
+* **Data Engineering:** Curating and pruning a large data set like COCO.
+* **:** 
+* **Inference Pipeline:** Achieving a stable video output required engineering dynamic padding (to fix proximity scale bias) and a custom temporal smoothing algorithm (`process_video_smooth.py`) to eliminate bounding box jitter.
+
+---
+*Developed by Shudhanshu Ranjan Gupta*
